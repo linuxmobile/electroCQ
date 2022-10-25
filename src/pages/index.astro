@@ -4,16 +4,15 @@ import MainHead from '../components/MainHead.astro';
 import Header from '../components/Header.astro';
 import Nav from '../components/Nav.astro';
 import HotSale from '../components/HotSale.astro';
+import Articles from '../components/Articles.astro';
 import Footer from '../components/Footer.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
+// import PortfolioPreview from '../components/PortfolioPreview.astro';
 import type { Project } from '../types';
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = await Astro.glob<Project>('./project/**/*.md');
 const featuredProject = projects[0]!;
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 
 <html lang="en">
@@ -25,6 +24,7 @@ const featuredProject = projects[0]!;
 		<Header />
 		<main>
 			<HotSale />
+			<Articles />
 		</main>
 		<!-- <main class="wrapper">
 			<div class="grid">

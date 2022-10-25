@@ -1,0 +1,21 @@
+---
+import articles from '../pages/articles/data.json'
+
+const item = (articles)
+// console.log(item[0].title)
+
+const itemRender = () => {
+    for (let index = 0; index < item.length; index++) {
+        const element = item[index];
+        // console.log(element)
+    }
+}
+itemRender()
+
+---
+
+<section>
+    <p>{ item[0].tag }</p> <!-- Muestra solo el tag del array 0 --> 
+    <h2>{ item[0].title }</h2>
+    <!-- <p>{ element.title }</p> muestre los titulos del array 0 y 1 --> 
+</section>
