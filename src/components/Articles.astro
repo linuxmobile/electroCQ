@@ -2,20 +2,26 @@
 import articles from '../pages/articles/data.json'
 
 const item = (articles)
-// console.log(item[0].title)
+// console.log(item[0].title)+
+
+// This function work fine ->
+/* let img = []
+let titles = []
 
 const itemRender = () => {
     for (let index = 0; index < item.length; index++) {
         const element = item[index];
-        // console.log(element)
+        img.push(element.img)
+        titles.push(element.title)
     }
 }
 itemRender()
+console.log(img, titles) */
 
 ---
 
 <section>
-    <p>{ item[0].tag }</p> <!-- Muestra solo el tag del array 0 --> 
-    <h2>{ item[0].title }</h2>
-    <!-- <p>{ element.title }</p> muestre los titulos del array 0 y 1 --> 
+    <div>
+        <p>{ item[0].categories }</p>
+    </div>
 </section>
